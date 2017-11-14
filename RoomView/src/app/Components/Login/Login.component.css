@@ -1,0 +1,19 @@
+.container {
+    background: black;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    align-self: center
+}
+
+.btn-primary {
+background: #FFF200;
+color: black;
+border-color: #FFF200;
+}
