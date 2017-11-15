@@ -8,7 +8,7 @@
     align-items: center;
     /* color: white;
     background: rgba(55, 55, 63, 0.521); */
-    box-shadow: 0px 0px 20px 2px rgba(255, 238, 0, 0.322), 0px 0px 20px 2px rgba(255, 238, 0, 0.322);
+    /* box-shadow: 0px 0px 20px 2px rgba(255, 238, 0, 0.322), 0px 0px 20px 2px rgba(255, 238, 0, 0.322); */
 }
 
 
@@ -37,8 +37,8 @@
 }
 
   .nav-item.active {
-    border-bottom: 4px solid rgba(255, 238, 0, 0.322);
-    margin-bottom: -10px; 
+    box-shadow: 0 10px 7px -4px rgba(255, 238, 0, 0.322);
+    margin-bottom: -6px; 
   }
   .dropdown-pull-right {
     float: right !important;

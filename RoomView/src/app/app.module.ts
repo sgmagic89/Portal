@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, HashLocationStrategy, CommonModule } from '@angular/common';
+import { TreeModule } from 'angular-tree-component';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Components/Login/Login.component';
@@ -15,6 +16,7 @@ import { ProvisionComponent } from './Components/Dashboard/provision/provision.c
 import { UsersComponent } from './Components/Dashboard/users/users.component';
 import { FirmwareComponent } from './Components/Dashboard/firmware/firmware.component';
 import { ConfigurationComponent } from './Components/Dashboard/configuration/configuration.component';
+import { LeftnavbarComponent } from './Components/Common/leftnavbar/leftnavbar.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,17 @@ import { ConfigurationComponent } from './Components/Dashboard/configuration/con
     ProvisionComponent,
     UsersComponent,
     FirmwareComponent,
-    ConfigurationComponent
+    ConfigurationComponent,
+    LeftnavbarComponent
 ],
   imports: [
     BrowserModule,
+    CommonModule,
     RoutingModule,
     FlexLayoutModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    TreeModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

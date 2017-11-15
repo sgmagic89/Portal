@@ -1,0 +1,25 @@
+.leftNavBar {
+    width: 300px;
+    height: 100%;
+    color: white;
+    background: #343A40;
+    margin-right: 1rem;
+  
+}
+
+.leftNavActions {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 25px;
+    color: #CCCECF;
+    background: rgb(27, 27, 26);
+    box-shadow: 0 10px 7px -4px rgba(255, 238, 0, 0.322);
+}
+
+.leftNavActions :hover{
+    color: white;
+}
+
+.devicesList {
+    margin-top: 1rem;
+}
