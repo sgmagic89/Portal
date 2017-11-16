@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-leftnavbar',
   templateUrl: './leftnavbar.component.html',
   styleUrls: ['./leftnavbar.component.css']
 })
 export class LeftnavbarComponent implements OnInit {
+  isProvision: boolean = false;
   nodes = [
     {
       id: 1,
@@ -40,7 +41,19 @@ export class LeftnavbarComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(public router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        if (event.url.includes('provision', 0)) {
+          this.isProvision = true;
+        } else {
+          this.isProvision = false;
+        }
+        console.log(event.url);
+        console.log(this.isProvision);
+      }
+    });
+   }
 
   ngOnInit() {
   }

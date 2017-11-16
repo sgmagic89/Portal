@@ -1,10 +1,15 @@
 <div class="leftNavBar">
-  <div class="leftNavActions"  fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2rem">
-    <!-- <a class="fa fa-plus"></a>
-    <a class="fa fa-times"></a>
-    <a class="fa fa-pencil"></a>
-    <a class="fa fa-check-square-o"></a> -->
-    <a>Room</a> 
+  <div class="leftNavActions"  fxLayout="row" fxLayoutAlign="center" >
+    <div class="provisionactions" fxLayoutGap="2rem" *ngIf="isProvision">
+      <a class="fa fa-plus"></a>
+      <a class="fa fa-times"></a>
+      <a class="fa fa-pencil"></a>
+      <a class="fa fa-check-square-o"></a>
+    </div>
+
+    <div class="controlactions" *ngIf="!isProvision">
+      <a>Room</a> 
+    </div>
   </div>
   <div class="devicesList">
       <tree-root [nodes]="nodes"></tree-root>
