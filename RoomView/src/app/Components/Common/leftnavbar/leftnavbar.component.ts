@@ -34,7 +34,8 @@ export class LeftnavbarComponent implements OnInit {
           name: 'Wall Lights',
           children: [
             { id: 10, name: 'Left Light' },
-            { id: 11, name: 'Right Light' }
+            { id: 11, name: 'Right Light' },
+            { id: 23, name: 'Floor Lights' }
           ]
         }
       ]
