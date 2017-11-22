@@ -1,3 +1,4 @@
+import { RightnavbarComponent } from './Components/Common/rightnavbar/rightnavbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -29,7 +30,8 @@ import { LeftnavbarComponent } from './Components/Common/leftnavbar/leftnavbar.c
     UsersComponent,
     FirmwareComponent,
     ConfigurationComponent,
-    LeftnavbarComponent
+    LeftnavbarComponent,
+    RightnavbarComponent
 ],
   imports: [
     BrowserModule,
