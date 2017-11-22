@@ -1,3 +1,26 @@
 #mapEditor {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/assets/fonts/fontawesome-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.panel {
+    margin-top: 0.3rem;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #191919;
+}
+
+#stage{
+    font-family:FontAwesome;
+}
+.bottomPanel {
+    background: #191919;
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 0.1rem;
 }

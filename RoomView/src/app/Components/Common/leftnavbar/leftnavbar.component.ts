@@ -7,6 +7,9 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 })
 export class LeftnavbarComponent implements OnInit {
   isProvision: boolean = false;
+  options = {
+    allowDrag:  (node) => node.isLeaf
+  };
   nodes = [
     {
       id: 1,
