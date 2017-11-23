@@ -2,12 +2,7 @@
     /* margin-top: 2rem; */
 }
 
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('/assets/fonts/fontawesome-webfont.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .panel {
     margin-top: 0.3rem;
     border-style: solid;
@@ -15,9 +10,6 @@
     border-color: #191919;
 }
 
-#stage{
-    font-family:FontAwesome;
-}
 .bottomPanel {
     background: #191919;
     width: 100%;
