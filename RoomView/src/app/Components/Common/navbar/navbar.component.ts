@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  @ViewChild('mainMenuItems') mainMenu: ElementRef;
   constructor() { }
 
   ngOnInit() {
+    console.log(this.mainMenu.nativeElement.children);
   }
 
   clickedLink(e) {
@@ -22,4 +24,5 @@ export class NavbarComponent implements OnInit {
     }
     element.parentElement.classList.add('active');
   }
+
 }

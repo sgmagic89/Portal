@@ -21,6 +21,7 @@ export class ProvisionComponent implements AfterViewInit {
     // enabled mouse over / out events
     this.cnv.enableMouseOver(10);
     this.cnv.mouseMoveOutside = true; // keep tracking the mouse even when it leaves the canvas
+    this.cnv.update();
     const gridOptions = {
         linesOptions: {
             separation: 10,
